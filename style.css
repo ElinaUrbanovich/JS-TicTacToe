@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    background-color: #3fb0ac;
+    color: #173e43;
+}
+
+main {
+    margin-top: 100px;
+}
+
+h1 {
+    color: #fae596;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 50px;
+}
+
+#turn h3,
+#result h3 {
+    font-size: 25px;
+}
+
+#container {
+    display: flex;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#chooseplayer {
+    font-size: 25px;
+    visibility: visible;
+    /*display: none*/
+}
+
+.player {
+    background-color: #dddfd4;
+    border-radius: 8px;
+    height: 70px;
+    width: 70px;
+}
+
+.player:hover {
+    background-color: #fae596;
+}
+
+#gamefield {
+    visibility: hidden;
+    height: 350px;
+    width: 350px;
+    border: 1px solid black;
+    background-color: #173e43;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cell {
+    height: 30%;
+    width: 30%;
+    border: 1px solid black;
+    background-color: #dddfd4;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+}
+
+.cell:hover {
+    background-color: #fae596;
+}
+
+#result {
+    visibility: hidden;
+}
+
+#restart {
+    background-color: #dddfd4;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#restart:hover {
+    background-color: #fae596;
+}

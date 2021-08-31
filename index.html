@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <h1>TicTacToe</h1>
+
+        <div id="chooseplayer">
+
+            <h3>Do you want to be <b>X</b> or <b>O</b>?</h3>
+            <button class = "player" id = "X" type="button" onclick = "startGame(this.id)"><img width='50px' src = 'images/x.svg'></button>
+            <button class = "player" id = "O" type="button" onclick = "startGame(this.id)"><img width='50px' src = 'images/o.svg'></button>
+
+        </div>
+
+        <section id="container">
+
+            <h3 id = "turn"></h3>
+
+            <div id = "gamefield">
+
+                <div class = "cell" id = "cell1" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell2" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell3" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell4" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell5" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell6" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell7" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell8" onclick = "clickCell(this.id)"></div>
+                <div class = "cell" id = "cell9" onclick = "clickCell(this.id)"></div>
+
+            </div>
+
+        </section>
+
+        <div id="result">
+
+            <h3 id = "gameover"></h3>
+            <button id = "restart" type="button" onclick = document.location.reload()>Play again</button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
