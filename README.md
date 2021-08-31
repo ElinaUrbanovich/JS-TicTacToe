@@ -1,2 +1,2 @@
 # JS TicTacToe
- Project written to prctice JS skills
+ Project written to practice JS skills
